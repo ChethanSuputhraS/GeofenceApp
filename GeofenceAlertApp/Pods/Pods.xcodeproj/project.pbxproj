@@ -1,0 +1,1288 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		0C1885900810601510E0C632060FAF26 /* GooglePlaces */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = E215DFB4EAE26646AFED2C4861A55C32 /* Build configuration list for PBXAggregateTarget "GooglePlaces" */;
+			buildPhases = (
+			);
+			dependencies = (
+				D9BD649070DE013341A302C4B9060CAA /* PBXTargetDependency */,
+			);
+			name = GooglePlaces;
+		};
+		E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 46921981F609C5BA3CB72EC4EA41299D /* Build configuration list for PBXAggregateTarget "GoogleMaps" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = GoogleMaps;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		024D1EFB1F5829EE1205B5BDC82BC816 /* DFUPeripheralSelectorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D0BC49E7730931F2CE20B8F50D05EE /* DFUPeripheralSelectorDelegate.swift */; };
+		0B59D8FE732DC50552FCEE4F0D7753B2 /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 01076B05374F7935EF6530932A74E6C1 /* crypt.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		124C9783F8CF82016A33480A2753E729 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BD9C11930CC8B64A9BD075025F92024 /* Foundation.framework */; };
+		172EC7421AFB575A055F7890342D1ED4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BD9C11930CC8B64A9BD075025F92024 /* Foundation.framework */; };
+		179B8679805E0DA25D8E608B102E60EA /* DFUServiceInitiator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D00B7C203B075A0F676D302FF31F39 /* DFUServiceInitiator.swift */; };
+		1F0C4885194C9052A7D5A51EC5B9EC8E /* DFUPeripheralSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7B873870B71FED24E3F410FE0D8F7D /* DFUPeripheralSelector.swift */; };
+		1F8AE5B01D9CAE04645803CB21191FB9 /* iOSDFULibrary-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 363793A1209DD81024A57CE1F7F9C92E /* iOSDFULibrary-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		22F5D80BF57E4251D5B5033EC3E2746F /* ButtonlessDFU.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCC722B50F6FD9872E09903474BB3BF /* ButtonlessDFU.swift */; };
+		23DFCC98ACD04DE589BBEB614EFE144C /* DFUCharacteristic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F2B023908C0F1ED6F0C62C7BEFD0C8 /* DFUCharacteristic.swift */; };
+		2574B452EFB7B50CF63DBA06066D815E /* DFUStreamZip.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FDD145569E994711F539BDB604C1D6 /* DFUStreamZip.swift */; };
+		261083104CE32B4A1144569C17E41FAD /* LegacyDFUPeripheralDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23983BE4C39D79C9607AC1150BD545DF /* LegacyDFUPeripheralDelegate.swift */; };
+		26A539E96CCCB09C15301A8DE0255F66 /* DFUService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6085680F4D2CE6833FF3B820541457 /* DFUService.swift */; };
+		2BB0A02B444127A680753943F3031A5E /* ZipArchive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED3D233E576594E59744B88387F0D5D /* ZipArchive.swift */; };
+		355B4CE47899007A56EDAA23929E8BE9 /* LoggerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50416C510D846A10F4D2FFF799C1F680 /* LoggerHelper.swift */; };
+		36D1629A4BC33D0DD973CCBFFB27DB67 /* DFUFirmware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B79F6DBF09E9F3A679D1C373F176969 /* DFUFirmware.swift */; };
+		39464E5D948269EA20FD8367F5571A25 /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 69CF3BB6F305F3198E396EDA9814130D /* ioapi.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		47537B37B242226B8A08BEB235D9C387 /* IntelHex2BinConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = DD61E42D59F55A68AB666F4700233266 /* IntelHex2BinConverter.m */; };
+		4953C1D8CC82D0FA9ABE401AB1A929C1 /* iOSDFULibrary-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DEE116A158771D20773BF06BE0F29C24 /* iOSDFULibrary-dummy.m */; };
+		4B9D69BCB50A3548F839401BF813452A /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = AAFF3EFA0EDA6F0757FF8FFA18B60321 /* zip.c */; };
+		4EF32DD10927425C931F4C29E81695C0 /* Pods-GeofenceAlertApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C91AFDAB1C1A69CC937713BEFF7089 /* Pods-GeofenceAlertApp-dummy.m */; };
+		594432DBF0178971F35410DBEAA86E58 /* DFUServiceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7FADAF442C89E41C3D39AB1BAD9ADD /* DFUServiceDelegate.swift */; };
+		5A2993C550EBBA7F40E0412BF38DD967 /* DFUVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D412F7E3C585485CFA37529B14286E /* DFUVersion.swift */; };
+		60C4384A4C600977221E6FD30DBF3D06 /* DFUPeripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839526D2BEF76D69F89823FFAF5C06D9 /* DFUPeripheral.swift */; };
+		60C8B42D1F546CA11E136E148351D5D9 /* SecureDFUServiceInitiator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7447135D9BEF182DBF7D84587AF240DD /* SecureDFUServiceInitiator.swift */; };
+		6316A8AAF83471A7B918A1B666633EB5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BD9C11930CC8B64A9BD075025F92024 /* Foundation.framework */; };
+		653B489882F154CF089B510A2001245C /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = BAE892C255853DA82F20C39FCB55704D /* unzip.c */; };
+		67DD388FF9250B80ADA419FDD188AC4F /* DFUServiceSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8B1533286B3360EE100E40CEE9AA00 /* DFUServiceSelector.swift */; };
+		6D24A4AFE22C0CC51BC57592B284F6CC /* DFUExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C000CDC875E74D31743BEADDB376F3F8 /* DFUExecutor.swift */; };
+		71520F4C63CA33327D492A5425FCAD42 /* SecureDFUControlPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97BB75492A74072AB5EC9F7E73B135B /* SecureDFUControlPoint.swift */; };
+		7225397D8098EE2C811C49F0486FD1D2 /* DFUPeripheralDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6595B1F1693846EAB1602E7BC1B20F5D /* DFUPeripheralDelegate.swift */; };
+		759AC93D1054A4782D1560B92BC2941D /* DFUServiceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0100C79374DA2C62BF47E49DEDD8B37C /* DFUServiceController.swift */; };
+		75A83AF070639F33E58DB6EC02ECA6AF /* DFUController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D3AB4BFA76D39059A66862BF4C1B68 /* DFUController.swift */; };
+		85070186B87AE8EC4C285380CC3B4F02 /* DFUStreamHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6D3D4B4B1DAD750B012AAE4137CEF2 /* DFUStreamHex.swift */; };
+		8823E3B2CA15E4774797BE1CF330B338 /* ZipUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0D0CC106E6952C828594ED57BD36C6 /* ZipUtilities.swift */; };
+		8A1F1756537590E54D168C01E4E17DA2 /* SecureDFUService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295156FAF006BB7B0EE05688BD5C00CB /* SecureDFUService.swift */; };
+		8D1B5381DD3E7BF942125A9E606AF02F /* DFUPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2826FDD4DE8FAED24CD285F10D760E /* DFUPacket.swift */; };
+		8FB420C8BEC39AD4DDD47B1C482A91EB /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = 392E20969AA04F20CB87E537AFBFD3C7 /* unzip.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9C368A7A33571EE6119126EF70DB8B91 /* QuickZip.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91B76A10960C8AE49F678D4A0258093 /* QuickZip.swift */; };
+		9C9E40BD4D137876EDA0954435A3656F /* LoggerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75609901B8E036E5D0BA6CFAFF87EF8D /* LoggerDelegate.swift */; };
+		AA621FAB76B8525AF9DD922007C8946F /* DFUStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED53598DC441286B08CF16DF857A07FE /* DFUStream.swift */; };
+		AC6CE5FFAABA4CE0FF9CC345B9723C09 /* ManifestFirmwareInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B862D2D1B3F4BB1EF849AFF357D10054 /* ManifestFirmwareInfo.swift */; };
+		ADAA63E76B80D4764752B488CB49F961 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8792E61C7CBAF9BB6AC08E37A010EE2D /* Double.swift */; };
+		B32AAC463925D876F97F6621FC5D8B5F /* Zip-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9722E1AB93FA0499060CDAA42C9A108B /* Zip-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B42B7ED5EDB5EB88EB98CE26612CFC9D /* SecureDFUPeripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E50257DC00278343A01EC360F50CA6 /* SecureDFUPeripheral.swift */; };
+		B6DAEB0D2993669E417B7F4339966D15 /* DFUUuidHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A051FD1BA6F5972D9576C6345999CE /* DFUUuidHelper.swift */; };
+		BB43B38CCA690577BF5C8E93FE9283FF /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = EAB4F70DD80D93D7DAE93556955C8B29 /* zip.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C04C5544566023B9C3C07D0197868058 /* SecureDFUPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2C10C3F053CBC2206B603340574296 /* SecureDFUPacket.swift */; };
+		C0FDBDDC5B5D7C5147B2FC13DECF98E8 /* LegacyDFUPeripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34616EE3B8A01FA51995883C70276BAA /* LegacyDFUPeripheral.swift */; };
+		C1A26F3E96EE111D2E7B66D2E6CF9DAC /* SecureDFUPeripheralDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6305BD263D981B045F67C3A9E1CF13A7 /* SecureDFUPeripheralDelegate.swift */; };
+		C32C0E3A60BBF0DBF3544CA3E7FF4197 /* Zip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E667E18EF9DCB8390ECCE4F7BF979D1 /* Zip.framework */; };
+		C51301A992286D198C4BD81642150352 /* Zip-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCED64152383BC2C899A630E5073B10 /* Zip-dummy.m */; };
+		D75B9A275C2EF688699D3D57C27CE983 /* Zip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4DBC8DB984B1B397E4650F57FF86AC /* Zip.swift */; };
+		D88EA58D56BE2167E463D427C78E4FC6 /* crc32.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892412913EEC146FEA5D0106E3A5F85B /* crc32.swift */; };
+		D95B429EA2D9B2F6100ED8D28029A4FB /* DFUStarterPeripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DA6DA9B132E26DA2A887FAF9CEECA7 /* DFUStarterPeripheral.swift */; };
+		DA889C0CD12ADDA9A3A030DDB5CE3B58 /* SecureDFUExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB803EC6965BE083A7744BC181B38C2 /* SecureDFUExecutor.swift */; };
+		DBA973E349876C4DF8A7F1B932AD9E37 /* LegacyDFUService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881FFE5C6271092676E2E3FF5A05441A /* LegacyDFUService.swift */; };
+		DD63D6063EB5DAA46DCE7CF331DEA370 /* Zip.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E85FF108589D27726309D9DDB104106 /* Zip.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E12B6BAD7436F73517D97517CAC5EB85 /* SoftdeviceBootloaderInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC20E542CEA7473EB79A4154F600860 /* SoftdeviceBootloaderInfo.swift */; };
+		E23A32D3E5C53DB67ADA26F35802ADBB /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E48953D9DA7FE88DA466778B6DC078 /* Data.swift */; };
+		E298433BE50EBFE999F325E896E1553D /* LegacyDFUServiceInitiator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A09D1D4F7979825927E99A3B8F4EA91 /* LegacyDFUServiceInitiator.swift */; };
+		E6ADA4FA08411F5C7C59E8A7E2584106 /* IntelHex2BinConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = 28AE84692F054CFF56FE1A33B949A69B /* IntelHex2BinConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EA521669E423D436D9C18B7D0F6D15D8 /* Manifest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12ED4D9641422138561FA292D6C481D /* Manifest.swift */; };
+		EBB147AEA3F40178C816835F8196F1F8 /* LegacyDFUExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5246BAFA35D626B62E756839449B56FC /* LegacyDFUExecutor.swift */; };
+		ED1C0BA0F66CD2CABF506525F8EC7963 /* DFUStreamBin.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42C18E695146429058049A22CDD1EFC /* DFUStreamBin.swift */; };
+		F0FB70471FA122551E827D26FB4C1B48 /* DFUControlPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297FFB28DD909FDF54037121F0A727A8 /* DFUControlPoint.swift */; };
+		F862C1CD19A69E8763D35A60F83443C2 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 475965FCCA4E28130B4FF9D872BCC894 /* ioapi.c */; };
+		FCA611D7E3C514151696688FF8F8C37B /* Pods-GeofenceAlertApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EE76B93FD12C33C8D21F39B6FB74F2AC /* Pods-GeofenceAlertApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		505955DB92CCF26EE0A31C08388A6902 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5B4BBC6DD552AC8943C7E22772FC1D3;
+			remoteInfo = GoogleMaps;
+		};
+		526F46E6146EDB7F5BAF17AB47EC92C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 31708EE6929C61C0EDA6F5DAE3AF9DB7;
+			remoteInfo = Zip;
+		};
+		532E2ACA5EAB448EDD818880434A44CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9506C7FCDAE6E6967A99655F452EEE93;
+			remoteInfo = iOSDFULibrary;
+		};
+		A6203C990694BBCD00F0E1EC41676515 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C1885900810601510E0C632060FAF26;
+			remoteInfo = GooglePlaces;
+		};
+		AF707AB729788D9649BF36E36A1FFA66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5B4BBC6DD552AC8943C7E22772FC1D3;
+			remoteInfo = GoogleMaps;
+		};
+		F0D4F9C10BBFE859AA4A7E7E5CB10B66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 31708EE6929C61C0EDA6F5DAE3AF9DB7;
+			remoteInfo = Zip;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0100C79374DA2C62BF47E49DEDD8B37C /* DFUServiceController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUServiceController.swift; path = iOSDFULibrary/Classes/Implementation/DFUServiceController.swift; sourceTree = "<group>"; };
+		01076B05374F7935EF6530932A74E6C1 /* crypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypt.h; path = Zip/minizip/crypt.h; sourceTree = "<group>"; };
+		02C91AFDAB1C1A69CC937713BEFF7089 /* Pods-GeofenceAlertApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GeofenceAlertApp-dummy.m"; sourceTree = "<group>"; };
+		04378A09B1ECAC4C2C40C5C7AA6FFD89 /* GooglePlaces.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GooglePlaces.bundle; path = Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle; sourceTree = "<group>"; };
+		0B8B1533286B3360EE100E40CEE9AA00 /* DFUServiceSelector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUServiceSelector.swift; path = iOSDFULibrary/Classes/Implementation/DFUSelector/DFUServiceSelector.swift; sourceTree = "<group>"; };
+		0F6D3D4B4B1DAD750B012AAE4137CEF2 /* DFUStreamHex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUStreamHex.swift; path = iOSDFULibrary/Classes/Utilities/Streams/DFUStreamHex.swift; sourceTree = "<group>"; };
+		118BEF5C020D4792F09B365537F225B6 /* GooglePlaces.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlaces.framework; path = Frameworks/GooglePlaces.framework; sourceTree = "<group>"; };
+		1A09D1D4F7979825927E99A3B8F4EA91 /* LegacyDFUServiceInitiator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LegacyDFUServiceInitiator.swift; path = iOSDFULibrary/Classes/Implementation/LegacyDFU/DFU/LegacyDFUServiceInitiator.swift; sourceTree = "<group>"; };
+		1B0228729184A64E6EE2D5342E3C558F /* Pods-GeofenceAlertApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GeofenceAlertApp.modulemap"; sourceTree = "<group>"; };
+		21B1375088A0310C7AE2BE4C8188D12F /* iOSDFULibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = iOSDFULibrary.framework; path = iOSDFULibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		224AE1953EF1DE040C6F9B7B7F4F7436 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
+		22BBEE1C7F68BC959405ED7A7326C5DA /* Pods-GeofenceAlertApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GeofenceAlertApp-resources.sh"; sourceTree = "<group>"; };
+		23983BE4C39D79C9607AC1150BD545DF /* LegacyDFUPeripheralDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LegacyDFUPeripheralDelegate.swift; path = iOSDFULibrary/Classes/Implementation/LegacyDFU/Peripherals/LegacyDFUPeripheralDelegate.swift; sourceTree = "<group>"; };
+		25B4403ED05E7F37EC4C897FBEA34524 /* Pods-GeofenceAlertApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GeofenceAlertApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		266D0EAC048B24BCF0E411E2C97D71F1 /* iOSDFULibrary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = iOSDFULibrary.debug.xcconfig; sourceTree = "<group>"; };
+		28AE84692F054CFF56FE1A33B949A69B /* IntelHex2BinConverter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IntelHex2BinConverter.h; path = iOSDFULibrary/Classes/Utilities/HexToBinConverter/IntelHex2BinConverter.h; sourceTree = "<group>"; };
+		295156FAF006BB7B0EE05688BD5C00CB /* SecureDFUService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SecureDFUService.swift; path = iOSDFULibrary/Classes/Implementation/SecureDFU/Services/SecureDFUService.swift; sourceTree = "<group>"; };
+		297FFB28DD909FDF54037121F0A727A8 /* DFUControlPoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUControlPoint.swift; path = iOSDFULibrary/Classes/Implementation/LegacyDFU/Characteristics/DFUControlPoint.swift; sourceTree = "<group>"; };
+		2AEC282D8799607F3D3639480006639A /* Pods-GeofenceAlertApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GeofenceAlertApp.debug.xcconfig"; sourceTree = "<group>"; };
+		2C7FADAF442C89E41C3D39AB1BAD9ADD /* DFUServiceDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUServiceDelegate.swift; path = iOSDFULibrary/Classes/Implementation/DFUServiceDelegate.swift; sourceTree = "<group>"; };
+		34616EE3B8A01FA51995883C70276BAA /* LegacyDFUPeripheral.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LegacyDFUPeripheral.swift; path = iOSDFULibrary/Classes/Implementation/LegacyDFU/Peripherals/LegacyDFUPeripheral.swift; sourceTree = "<group>"; };
+		363793A1209DD81024A57CE1F7F9C92E /* iOSDFULibrary-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iOSDFULibrary-umbrella.h"; sourceTree = "<group>"; };
+		392E20969AA04F20CB87E537AFBFD3C7 /* unzip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = unzip.h; path = Zip/minizip/unzip.h; sourceTree = "<group>"; };
+		397507ACFB5285E9D13DFB3D3BC003E9 /* iOSDFULibrary-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "iOSDFULibrary-Info.plist"; sourceTree = "<group>"; };
+		3BD9C11930CC8B64A9BD075025F92024 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3E0D0CC106E6952C828594ED57BD36C6 /* ZipUtilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZipUtilities.swift; path = Zip/ZipUtilities.swift; sourceTree = "<group>"; };
+		3E667E18EF9DCB8390ECCE4F7BF979D1 /* Zip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Zip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F2826FDD4DE8FAED24CD285F10D760E /* DFUPacket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUPacket.swift; path = iOSDFULibrary/Classes/Implementation/LegacyDFU/Characteristics/DFUPacket.swift; sourceTree = "<group>"; };
+		44D9428A48389C8B2273CC34F1348A25 /* GoogleMaps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleMaps.debug.xcconfig; sourceTree = "<group>"; };
+		46DF49F00EA5EE6406DE0CE5D6E8D2DC /* Zip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Zip.release.xcconfig; sourceTree = "<group>"; };
+		475965FCCA4E28130B4FF9D872BCC894 /* ioapi.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ioapi.c; path = Zip/minizip/ioapi.c; sourceTree = "<group>"; };
+		4EB30F1DE53C391ABC116F25CF512852 /* Pods-GeofenceAlertApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GeofenceAlertApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4FA9F08D0F1C82E45276C02890239BDA /* iOSDFULibrary-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iOSDFULibrary-prefix.pch"; sourceTree = "<group>"; };
+		50416C510D846A10F4D2FFF799C1F680 /* LoggerHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LoggerHelper.swift; path = iOSDFULibrary/Classes/Utilities/Logging/LoggerHelper.swift; sourceTree = "<group>"; };
+		5246BAFA35D626B62E756839449B56FC /* LegacyDFUExecutor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LegacyDFUExecutor.swift; path = iOSDFULibrary/Classes/Implementation/LegacyDFU/DFU/LegacyDFUExecutor.swift; sourceTree = "<group>"; };
+		52F2B023908C0F1ED6F0C62C7BEFD0C8 /* DFUCharacteristic.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUCharacteristic.swift; path = iOSDFULibrary/Classes/Implementation/GenericDFU/DFUCharacteristic.swift; sourceTree = "<group>"; };
+		53E48953D9DA7FE88DA466778B6DC078 /* Data.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Data.swift; path = iOSDFULibrary/Classes/Utilities/Data.swift; sourceTree = "<group>"; };
+		54E50257DC00278343A01EC360F50CA6 /* SecureDFUPeripheral.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SecureDFUPeripheral.swift; path = iOSDFULibrary/Classes/Implementation/SecureDFU/Peripheral/SecureDFUPeripheral.swift; sourceTree = "<group>"; };
+		5AB803EC6965BE083A7744BC181B38C2 /* SecureDFUExecutor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SecureDFUExecutor.swift; path = iOSDFULibrary/Classes/Implementation/SecureDFU/DFU/SecureDFUExecutor.swift; sourceTree = "<group>"; };
+		5B79F6DBF09E9F3A679D1C373F176969 /* DFUFirmware.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUFirmware.swift; path = iOSDFULibrary/Classes/Implementation/Firmware/DFUFirmware.swift; sourceTree = "<group>"; };
+		62525C99BE69AD43CD53051ABA505D4F /* iOSDFULibrary.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = iOSDFULibrary.modulemap; sourceTree = "<group>"; };
+		6305BD263D981B045F67C3A9E1CF13A7 /* SecureDFUPeripheralDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SecureDFUPeripheralDelegate.swift; path = iOSDFULibrary/Classes/Implementation/SecureDFU/Peripheral/SecureDFUPeripheralDelegate.swift; sourceTree = "<group>"; };
+		6595B1F1693846EAB1602E7BC1B20F5D /* DFUPeripheralDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUPeripheralDelegate.swift; path = iOSDFULibrary/Classes/Implementation/GenericDFU/DFUPeripheralDelegate.swift; sourceTree = "<group>"; };
+		69CF3BB6F305F3198E396EDA9814130D /* ioapi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ioapi.h; path = Zip/minizip/ioapi.h; sourceTree = "<group>"; };
+		6B4DBC8DB984B1B397E4650F57FF86AC /* Zip.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Zip.swift; path = Zip/Zip.swift; sourceTree = "<group>"; };
+		6E85FF108589D27726309D9DDB104106 /* Zip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Zip.h; path = Zip/Zip.h; sourceTree = "<group>"; };
+		7257FE5E3BEF97932BC89D07308D993A /* GooglePlaces.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GooglePlaces.release.xcconfig; sourceTree = "<group>"; };
+		7447135D9BEF182DBF7D84587AF240DD /* SecureDFUServiceInitiator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SecureDFUServiceInitiator.swift; path = iOSDFULibrary/Classes/Implementation/SecureDFU/DFU/SecureDFUServiceInitiator.swift; sourceTree = "<group>"; };
+		75609901B8E036E5D0BA6CFAFF87EF8D /* LoggerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LoggerDelegate.swift; path = iOSDFULibrary/Classes/Utilities/Logging/LoggerDelegate.swift; sourceTree = "<group>"; };
+		839526D2BEF76D69F89823FFAF5C06D9 /* DFUPeripheral.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUPeripheral.swift; path = iOSDFULibrary/Classes/Implementation/GenericDFU/DFUPeripheral.swift; sourceTree = "<group>"; };
+		8792E61C7CBAF9BB6AC08E37A010EE2D /* Double.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Double.swift; path = iOSDFULibrary/Classes/Utilities/Double.swift; sourceTree = "<group>"; };
+		87C5097598621A7EABAB94A50E06EBBF /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		881FFE5C6271092676E2E3FF5A05441A /* LegacyDFUService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LegacyDFUService.swift; path = iOSDFULibrary/Classes/Implementation/LegacyDFU/Services/LegacyDFUService.swift; sourceTree = "<group>"; };
+		892412913EEC146FEA5D0106E3A5F85B /* crc32.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = crc32.swift; path = iOSDFULibrary/Classes/Utilities/crc32.swift; sourceTree = "<group>"; };
+		8C2C10C3F053CBC2206B603340574296 /* SecureDFUPacket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SecureDFUPacket.swift; path = iOSDFULibrary/Classes/Implementation/SecureDFU/Characteristics/SecureDFUPacket.swift; sourceTree = "<group>"; };
+		8DF7D3F29539A3AEBB11D5E7178CB57E /* Pods-GeofenceAlertApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GeofenceAlertApp.release.xcconfig"; sourceTree = "<group>"; };
+		8ED3D233E576594E59744B88387F0D5D /* ZipArchive.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZipArchive.swift; path = iOSDFULibrary/Classes/Utilities/ZipArchive.swift; sourceTree = "<group>"; };
+		93D3AB4BFA76D39059A66862BF4C1B68 /* DFUController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUController.swift; path = iOSDFULibrary/Classes/Implementation/GenericDFU/DFUController.swift; sourceTree = "<group>"; };
+		94DC14EDDAB2CA2D3BA9F612552DC48F /* Pods_GeofenceAlertApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GeofenceAlertApp.framework; path = "Pods-GeofenceAlertApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9722E1AB93FA0499060CDAA42C9A108B /* Zip-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Zip-umbrella.h"; sourceTree = "<group>"; };
+		99005AE7EDC8C92623ED150733CA3817 /* GoogleMaps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleMaps.release.xcconfig; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A4ADD2633C39CE4840F09F7DD2DE7935 /* Zip-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Zip-prefix.pch"; sourceTree = "<group>"; };
+		A505C93460B54A5874958E1D7232D24F /* GooglePlaces.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GooglePlaces.debug.xcconfig; sourceTree = "<group>"; };
+		A845402EF959A57A4640F2A4F5155943 /* Zip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Zip.framework; path = Zip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8D00B7C203B075A0F676D302FF31F39 /* DFUServiceInitiator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUServiceInitiator.swift; path = iOSDFULibrary/Classes/Implementation/DFUServiceInitiator.swift; sourceTree = "<group>"; };
+		AAFF3EFA0EDA6F0757FF8FFA18B60321 /* zip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = zip.c; path = Zip/minizip/zip.c; sourceTree = "<group>"; };
+		AFCED64152383BC2C899A630E5073B10 /* Zip-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Zip-dummy.m"; sourceTree = "<group>"; };
+		B01ADC73600157940B384340D6471E6A /* Zip-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Zip-Info.plist"; sourceTree = "<group>"; };
+		B2D412F7E3C585485CFA37529B14286E /* DFUVersion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUVersion.swift; path = iOSDFULibrary/Classes/Implementation/LegacyDFU/Characteristics/DFUVersion.swift; sourceTree = "<group>"; };
+		B7D0BC49E7730931F2CE20B8F50D05EE /* DFUPeripheralSelectorDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUPeripheralSelectorDelegate.swift; path = iOSDFULibrary/Classes/Implementation/DFUPeripheralSelectorDelegate.swift; sourceTree = "<group>"; };
+		B862D2D1B3F4BB1EF849AFF357D10054 /* ManifestFirmwareInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ManifestFirmwareInfo.swift; path = iOSDFULibrary/Classes/Utilities/DFUPackage/Manifest/ManifestFirmwareInfo.swift; sourceTree = "<group>"; };
+		B91B76A10960C8AE49F678D4A0258093 /* QuickZip.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuickZip.swift; path = Zip/QuickZip.swift; sourceTree = "<group>"; };
+		BAE892C255853DA82F20C39FCB55704D /* unzip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = unzip.c; path = Zip/minizip/unzip.c; sourceTree = "<group>"; };
+		BB6085680F4D2CE6833FF3B820541457 /* DFUService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUService.swift; path = iOSDFULibrary/Classes/Implementation/GenericDFU/DFUService.swift; sourceTree = "<group>"; };
+		C000CDC875E74D31743BEADDB376F3F8 /* DFUExecutor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUExecutor.swift; path = iOSDFULibrary/Classes/Implementation/GenericDFU/DFUExecutor.swift; sourceTree = "<group>"; };
+		C12ED4D9641422138561FA292D6C481D /* Manifest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Manifest.swift; path = iOSDFULibrary/Classes/Utilities/DFUPackage/Manifest/Manifest.swift; sourceTree = "<group>"; };
+		C1501AB0F30FA0C122FCF38B6AA48097 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
+		C1A051FD1BA6F5972D9576C6345999CE /* DFUUuidHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUUuidHelper.swift; path = iOSDFULibrary/Classes/Implementation/DFUUuidHelper.swift; sourceTree = "<group>"; };
+		C9DA6DA9B132E26DA2A887FAF9CEECA7 /* DFUStarterPeripheral.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUStarterPeripheral.swift; path = iOSDFULibrary/Classes/Implementation/DFUSelector/DFUStarterPeripheral.swift; sourceTree = "<group>"; };
+		CCC20E542CEA7473EB79A4154F600860 /* SoftdeviceBootloaderInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SoftdeviceBootloaderInfo.swift; path = iOSDFULibrary/Classes/Utilities/DFUPackage/Manifest/SoftdeviceBootloaderInfo.swift; sourceTree = "<group>"; };
+		CD0A7C66988927469DAAD6D9ED9B7B21 /* Zip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Zip.debug.xcconfig; sourceTree = "<group>"; };
+		D59EEFE1A02211B1CE5FFD41A2712B6A /* Pods-GeofenceAlertApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GeofenceAlertApp-frameworks.sh"; sourceTree = "<group>"; };
+		DD1265A258EE293D218500E7DD72E860 /* iOSDFULibrary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = iOSDFULibrary.release.xcconfig; sourceTree = "<group>"; };
+		DD61E42D59F55A68AB666F4700233266 /* IntelHex2BinConverter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IntelHex2BinConverter.m; path = iOSDFULibrary/Classes/Utilities/HexToBinConverter/IntelHex2BinConverter.m; sourceTree = "<group>"; };
+		DEE116A158771D20773BF06BE0F29C24 /* iOSDFULibrary-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "iOSDFULibrary-dummy.m"; sourceTree = "<group>"; };
+		E42C18E695146429058049A22CDD1EFC /* DFUStreamBin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUStreamBin.swift; path = iOSDFULibrary/Classes/Utilities/Streams/DFUStreamBin.swift; sourceTree = "<group>"; };
+		E6FDD145569E994711F539BDB604C1D6 /* DFUStreamZip.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUStreamZip.swift; path = iOSDFULibrary/Classes/Utilities/Streams/DFUStreamZip.swift; sourceTree = "<group>"; };
+		E7D2069744183122EAD6E325DCFECC8E /* Zip.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Zip.modulemap; sourceTree = "<group>"; };
+		E97BB75492A74072AB5EC9F7E73B135B /* SecureDFUControlPoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SecureDFUControlPoint.swift; path = iOSDFULibrary/Classes/Implementation/SecureDFU/Characteristics/SecureDFUControlPoint.swift; sourceTree = "<group>"; };
+		EAB4F70DD80D93D7DAE93556955C8B29 /* zip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = zip.h; path = Zip/minizip/zip.h; sourceTree = "<group>"; };
+		EC7B873870B71FED24E3F410FE0D8F7D /* DFUPeripheralSelector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUPeripheralSelector.swift; path = iOSDFULibrary/Classes/Implementation/DFUPeripheralSelector.swift; sourceTree = "<group>"; };
+		ED53598DC441286B08CF16DF857A07FE /* DFUStream.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUStream.swift; path = iOSDFULibrary/Classes/Utilities/Streams/DFUStream.swift; sourceTree = "<group>"; };
+		EDCC722B50F6FD9872E09903474BB3BF /* ButtonlessDFU.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ButtonlessDFU.swift; path = iOSDFULibrary/Classes/Implementation/SecureDFU/Characteristics/ButtonlessDFU.swift; sourceTree = "<group>"; };
+		EE76B93FD12C33C8D21F39B6FB74F2AC /* Pods-GeofenceAlertApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GeofenceAlertApp-umbrella.h"; sourceTree = "<group>"; };
+		F8FDD6D828CEEF523BBC9147134D7945 /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
+		FD800CD44680F24ED0D23AE494F9D76C /* Pods-GeofenceAlertApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GeofenceAlertApp-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A526CC0EA062395D7F98FD976EA1183 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				172EC7421AFB575A055F7890342D1ED4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E83557DE587B3C5E04574AD89026332 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				124C9783F8CF82016A33480A2753E729 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D77B6E1A512AE331EE101BCE28165D34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6316A8AAF83471A7B918A1B666633EB5 /* Foundation.framework in Frameworks */,
+				C32C0E3A60BBF0DBF3544CA3E7FF4197 /* Zip.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		407772064F320DB9C19AEF67E6EEA1FA /* Pods-GeofenceAlertApp */ = {
+			isa = PBXGroup;
+			children = (
+				1B0228729184A64E6EE2D5342E3C558F /* Pods-GeofenceAlertApp.modulemap */,
+				4EB30F1DE53C391ABC116F25CF512852 /* Pods-GeofenceAlertApp-acknowledgements.markdown */,
+				25B4403ED05E7F37EC4C897FBEA34524 /* Pods-GeofenceAlertApp-acknowledgements.plist */,
+				02C91AFDAB1C1A69CC937713BEFF7089 /* Pods-GeofenceAlertApp-dummy.m */,
+				D59EEFE1A02211B1CE5FFD41A2712B6A /* Pods-GeofenceAlertApp-frameworks.sh */,
+				FD800CD44680F24ED0D23AE494F9D76C /* Pods-GeofenceAlertApp-Info.plist */,
+				22BBEE1C7F68BC959405ED7A7326C5DA /* Pods-GeofenceAlertApp-resources.sh */,
+				EE76B93FD12C33C8D21F39B6FB74F2AC /* Pods-GeofenceAlertApp-umbrella.h */,
+				2AEC282D8799607F3D3639480006639A /* Pods-GeofenceAlertApp.debug.xcconfig */,
+				8DF7D3F29539A3AEBB11D5E7178CB57E /* Pods-GeofenceAlertApp.release.xcconfig */,
+			);
+			name = "Pods-GeofenceAlertApp";
+			path = "Target Support Files/Pods-GeofenceAlertApp";
+			sourceTree = "<group>";
+		};
+		5ACDF0E1A0393509DF1D42CC50761249 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				118BEF5C020D4792F09B365537F225B6 /* GooglePlaces.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6A25570FC742CC4E58AAF22E7B9D6830 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3BD9C11930CC8B64A9BD075025F92024 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		8A90DD6500F885C673F95353B2D36FB5 /* GoogleMaps */ = {
+			isa = PBXGroup;
+			children = (
+				BE4FE636AD1F0A884C9826BC89D10AFE /* Base */,
+				CB453CE784B8494A87812CAABEC759F0 /* Maps */,
+				C1F0ADE4C91ED7DFF534CE4B417BE618 /* Support Files */,
+			);
+			name = GoogleMaps;
+			path = GoogleMaps;
+			sourceTree = "<group>";
+		};
+		930F9543026DBE262722B6E2C64FED9C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E7D2069744183122EAD6E325DCFECC8E /* Zip.modulemap */,
+				AFCED64152383BC2C899A630E5073B10 /* Zip-dummy.m */,
+				B01ADC73600157940B384340D6471E6A /* Zip-Info.plist */,
+				A4ADD2633C39CE4840F09F7DD2DE7935 /* Zip-prefix.pch */,
+				9722E1AB93FA0499060CDAA42C9A108B /* Zip-umbrella.h */,
+				CD0A7C66988927469DAAD6D9ED9B7B21 /* Zip.debug.xcconfig */,
+				46DF49F00EA5EE6406DE0CE5D6E8D2DC /* Zip.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Zip";
+			sourceTree = "<group>";
+		};
+		97139EABBFED8A988F56F1EC21643C82 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3E667E18EF9DCB8390ECCE4F7BF979D1 /* Zip.framework */,
+				6A25570FC742CC4E58AAF22E7B9D6830 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9B8F1257BAB22C82DD0D6E3C22FE0212 /* GooglePlaces */ = {
+			isa = PBXGroup;
+			children = (
+				5ACDF0E1A0393509DF1D42CC50761249 /* Frameworks */,
+				D0EF314C94FB8E1CA8DF8DD8FC4A0C3A /* Resources */,
+				E47D7428A7905BE6907514D84FEF0079 /* Support Files */,
+			);
+			name = GooglePlaces;
+			path = GooglePlaces;
+			sourceTree = "<group>";
+		};
+		9F3C36C984D3EEDF46ED41706A15E3D8 /* iOSDFULibrary */ = {
+			isa = PBXGroup;
+			children = (
+				EDCC722B50F6FD9872E09903474BB3BF /* ButtonlessDFU.swift */,
+				892412913EEC146FEA5D0106E3A5F85B /* crc32.swift */,
+				53E48953D9DA7FE88DA466778B6DC078 /* Data.swift */,
+				52F2B023908C0F1ED6F0C62C7BEFD0C8 /* DFUCharacteristic.swift */,
+				93D3AB4BFA76D39059A66862BF4C1B68 /* DFUController.swift */,
+				297FFB28DD909FDF54037121F0A727A8 /* DFUControlPoint.swift */,
+				C000CDC875E74D31743BEADDB376F3F8 /* DFUExecutor.swift */,
+				5B79F6DBF09E9F3A679D1C373F176969 /* DFUFirmware.swift */,
+				3F2826FDD4DE8FAED24CD285F10D760E /* DFUPacket.swift */,
+				839526D2BEF76D69F89823FFAF5C06D9 /* DFUPeripheral.swift */,
+				6595B1F1693846EAB1602E7BC1B20F5D /* DFUPeripheralDelegate.swift */,
+				EC7B873870B71FED24E3F410FE0D8F7D /* DFUPeripheralSelector.swift */,
+				B7D0BC49E7730931F2CE20B8F50D05EE /* DFUPeripheralSelectorDelegate.swift */,
+				BB6085680F4D2CE6833FF3B820541457 /* DFUService.swift */,
+				0100C79374DA2C62BF47E49DEDD8B37C /* DFUServiceController.swift */,
+				2C7FADAF442C89E41C3D39AB1BAD9ADD /* DFUServiceDelegate.swift */,
+				A8D00B7C203B075A0F676D302FF31F39 /* DFUServiceInitiator.swift */,
+				0B8B1533286B3360EE100E40CEE9AA00 /* DFUServiceSelector.swift */,
+				C9DA6DA9B132E26DA2A887FAF9CEECA7 /* DFUStarterPeripheral.swift */,
+				ED53598DC441286B08CF16DF857A07FE /* DFUStream.swift */,
+				E42C18E695146429058049A22CDD1EFC /* DFUStreamBin.swift */,
+				0F6D3D4B4B1DAD750B012AAE4137CEF2 /* DFUStreamHex.swift */,
+				E6FDD145569E994711F539BDB604C1D6 /* DFUStreamZip.swift */,
+				C1A051FD1BA6F5972D9576C6345999CE /* DFUUuidHelper.swift */,
+				B2D412F7E3C585485CFA37529B14286E /* DFUVersion.swift */,
+				8792E61C7CBAF9BB6AC08E37A010EE2D /* Double.swift */,
+				28AE84692F054CFF56FE1A33B949A69B /* IntelHex2BinConverter.h */,
+				DD61E42D59F55A68AB666F4700233266 /* IntelHex2BinConverter.m */,
+				5246BAFA35D626B62E756839449B56FC /* LegacyDFUExecutor.swift */,
+				34616EE3B8A01FA51995883C70276BAA /* LegacyDFUPeripheral.swift */,
+				23983BE4C39D79C9607AC1150BD545DF /* LegacyDFUPeripheralDelegate.swift */,
+				881FFE5C6271092676E2E3FF5A05441A /* LegacyDFUService.swift */,
+				1A09D1D4F7979825927E99A3B8F4EA91 /* LegacyDFUServiceInitiator.swift */,
+				75609901B8E036E5D0BA6CFAFF87EF8D /* LoggerDelegate.swift */,
+				50416C510D846A10F4D2FFF799C1F680 /* LoggerHelper.swift */,
+				C12ED4D9641422138561FA292D6C481D /* Manifest.swift */,
+				B862D2D1B3F4BB1EF849AFF357D10054 /* ManifestFirmwareInfo.swift */,
+				E97BB75492A74072AB5EC9F7E73B135B /* SecureDFUControlPoint.swift */,
+				5AB803EC6965BE083A7744BC181B38C2 /* SecureDFUExecutor.swift */,
+				8C2C10C3F053CBC2206B603340574296 /* SecureDFUPacket.swift */,
+				54E50257DC00278343A01EC360F50CA6 /* SecureDFUPeripheral.swift */,
+				6305BD263D981B045F67C3A9E1CF13A7 /* SecureDFUPeripheralDelegate.swift */,
+				295156FAF006BB7B0EE05688BD5C00CB /* SecureDFUService.swift */,
+				7447135D9BEF182DBF7D84587AF240DD /* SecureDFUServiceInitiator.swift */,
+				CCC20E542CEA7473EB79A4154F600860 /* SoftdeviceBootloaderInfo.swift */,
+				8ED3D233E576594E59744B88387F0D5D /* ZipArchive.swift */,
+				FCE899DB7435500D3A8146FCCD95F2D4 /* Support Files */,
+			);
+			name = iOSDFULibrary;
+			path = iOSDFULibrary;
+			sourceTree = "<group>";
+		};
+		A7EB503888600577E927508308763DF6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A90DD6500F885C673F95353B2D36FB5 /* GoogleMaps */,
+				9B8F1257BAB22C82DD0D6E3C22FE0212 /* GooglePlaces */,
+				9F3C36C984D3EEDF46ED41706A15E3D8 /* iOSDFULibrary */,
+				F459C6DAC5015EB980004638D817BA2B /* Zip */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AD7446E92D23A52B42B3B87C8C013439 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				21B1375088A0310C7AE2BE4C8188D12F /* iOSDFULibrary.framework */,
+				94DC14EDDAB2CA2D3BA9F612552DC48F /* Pods_GeofenceAlertApp.framework */,
+				A845402EF959A57A4640F2A4F5155943 /* Zip.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B328865FD698D2CB161D79DF95BEA257 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				87C5097598621A7EABAB94A50E06EBBF /* GoogleMaps.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		BE4FE636AD1F0A884C9826BC89D10AFE /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				D5276AF53C2C10E5CD8272F0F89E3D4B /* Frameworks */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		C1F0ADE4C91ED7DFF534CE4B417BE618 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				44D9428A48389C8B2273CC34F1348A25 /* GoogleMaps.debug.xcconfig */,
+				99005AE7EDC8C92623ED150733CA3817 /* GoogleMaps.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GoogleMaps";
+			sourceTree = "<group>";
+		};
+		CB453CE784B8494A87812CAABEC759F0 /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				F76774129387E9A8433F1321966CCBA8 /* Frameworks */,
+				B328865FD698D2CB161D79DF95BEA257 /* Resources */,
+			);
+			name = Maps;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				97139EABBFED8A988F56F1EC21643C82 /* Frameworks */,
+				A7EB503888600577E927508308763DF6 /* Pods */,
+				AD7446E92D23A52B42B3B87C8C013439 /* Products */,
+				F805FA7B7A682BB905A21994FEEA0B0A /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D0EF314C94FB8E1CA8DF8DD8FC4A0C3A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				04378A09B1ECAC4C2C40C5C7AA6FFD89 /* GooglePlaces.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		D5276AF53C2C10E5CD8272F0F89E3D4B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				224AE1953EF1DE040C6F9B7B7F4F7436 /* GoogleMapsBase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E47D7428A7905BE6907514D84FEF0079 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A505C93460B54A5874958E1D7232D24F /* GooglePlaces.debug.xcconfig */,
+				7257FE5E3BEF97932BC89D07308D993A /* GooglePlaces.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GooglePlaces";
+			sourceTree = "<group>";
+		};
+		F459C6DAC5015EB980004638D817BA2B /* Zip */ = {
+			isa = PBXGroup;
+			children = (
+				01076B05374F7935EF6530932A74E6C1 /* crypt.h */,
+				475965FCCA4E28130B4FF9D872BCC894 /* ioapi.c */,
+				69CF3BB6F305F3198E396EDA9814130D /* ioapi.h */,
+				B91B76A10960C8AE49F678D4A0258093 /* QuickZip.swift */,
+				BAE892C255853DA82F20C39FCB55704D /* unzip.c */,
+				392E20969AA04F20CB87E537AFBFD3C7 /* unzip.h */,
+				AAFF3EFA0EDA6F0757FF8FFA18B60321 /* zip.c */,
+				EAB4F70DD80D93D7DAE93556955C8B29 /* zip.h */,
+				6E85FF108589D27726309D9DDB104106 /* Zip.h */,
+				6B4DBC8DB984B1B397E4650F57FF86AC /* Zip.swift */,
+				3E0D0CC106E6952C828594ED57BD36C6 /* ZipUtilities.swift */,
+				930F9543026DBE262722B6E2C64FED9C /* Support Files */,
+			);
+			name = Zip;
+			path = Zip;
+			sourceTree = "<group>";
+		};
+		F76774129387E9A8433F1321966CCBA8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C1501AB0F30FA0C122FCF38B6AA48097 /* GoogleMaps.framework */,
+				F8FDD6D828CEEF523BBC9147134D7945 /* GoogleMapsCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F805FA7B7A682BB905A21994FEEA0B0A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				407772064F320DB9C19AEF67E6EEA1FA /* Pods-GeofenceAlertApp */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		FCE899DB7435500D3A8146FCCD95F2D4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				62525C99BE69AD43CD53051ABA505D4F /* iOSDFULibrary.modulemap */,
+				DEE116A158771D20773BF06BE0F29C24 /* iOSDFULibrary-dummy.m */,
+				397507ACFB5285E9D13DFB3D3BC003E9 /* iOSDFULibrary-Info.plist */,
+				4FA9F08D0F1C82E45276C02890239BDA /* iOSDFULibrary-prefix.pch */,
+				363793A1209DD81024A57CE1F7F9C92E /* iOSDFULibrary-umbrella.h */,
+				266D0EAC048B24BCF0E411E2C97D71F1 /* iOSDFULibrary.debug.xcconfig */,
+				DD1265A258EE293D218500E7DD72E860 /* iOSDFULibrary.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/iOSDFULibrary";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		172C062FDBF5BC72754166FEED895429 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCA611D7E3C514151696688FF8F8C37B /* Pods-GeofenceAlertApp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		330A825ACBC8728C72CC09913D0FE735 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B59D8FE732DC50552FCEE4F0D7753B2 /* crypt.h in Headers */,
+				39464E5D948269EA20FD8367F5571A25 /* ioapi.h in Headers */,
+				8FB420C8BEC39AD4DDD47B1C482A91EB /* unzip.h in Headers */,
+				B32AAC463925D876F97F6621FC5D8B5F /* Zip-umbrella.h in Headers */,
+				DD63D6063EB5DAA46DCE7CF331DEA370 /* Zip.h in Headers */,
+				BB43B38CCA690577BF5C8E93FE9283FF /* zip.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADBE4CEF7AE12EDABE868FD3C80F5A76 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6ADA4FA08411F5C7C59E8A7E2584106 /* IntelHex2BinConverter.h in Headers */,
+				1F8AE5B01D9CAE04645803CB21191FB9 /* iOSDFULibrary-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		31708EE6929C61C0EDA6F5DAE3AF9DB7 /* Zip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 608DA657D5E30B576DA6268896352268 /* Build configuration list for PBXNativeTarget "Zip" */;
+			buildPhases = (
+				330A825ACBC8728C72CC09913D0FE735 /* Headers */,
+				ED9BC8E6AC112461613C834DACDAB1EF /* Sources */,
+				7E83557DE587B3C5E04574AD89026332 /* Frameworks */,
+				05A919DA9135F97A03AC971800714018 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Zip;
+			productName = Zip;
+			productReference = A845402EF959A57A4640F2A4F5155943 /* Zip.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9506C7FCDAE6E6967A99655F452EEE93 /* iOSDFULibrary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D7C5A1CCBB51FEB84A022EABA1D5DFD /* Build configuration list for PBXNativeTarget "iOSDFULibrary" */;
+			buildPhases = (
+				ADBE4CEF7AE12EDABE868FD3C80F5A76 /* Headers */,
+				C10E931C5EE316BDECF2ED70C92879C2 /* Sources */,
+				D77B6E1A512AE331EE101BCE28165D34 /* Frameworks */,
+				04EF836C32D66053E78ED81D0A89B8E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1573CA849D7EA06715CD17047CE403AF /* PBXTargetDependency */,
+			);
+			name = iOSDFULibrary;
+			productName = iOSDFULibrary;
+			productReference = 21B1375088A0310C7AE2BE4C8188D12F /* iOSDFULibrary.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DC9D94812ABB5754D3A03DF9E15B4ABA /* Pods-GeofenceAlertApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 989237A36B20E72CBE0FA863B6AB16BE /* Build configuration list for PBXNativeTarget "Pods-GeofenceAlertApp" */;
+			buildPhases = (
+				172C062FDBF5BC72754166FEED895429 /* Headers */,
+				82C2CA63301CE2A3CF745D3F85189195 /* Sources */,
+				3A526CC0EA062395D7F98FD976EA1183 /* Frameworks */,
+				0D51E8E02AB48C9B2B029125D09BE7F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				312CA317FBE073DAA677196A150AB22E /* PBXTargetDependency */,
+				D8DC389D31356E5F97E660942AE4D2F4 /* PBXTargetDependency */,
+				65EC418A8E9366A79AA8711EA88979F9 /* PBXTargetDependency */,
+				851EDF830689F6D5F78A650F4F0F2409 /* PBXTargetDependency */,
+			);
+			name = "Pods-GeofenceAlertApp";
+			productName = "Pods-GeofenceAlertApp";
+			productReference = 94DC14EDDAB2CA2D3BA9F612552DC48F /* Pods_GeofenceAlertApp.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = AD7446E92D23A52B42B3B87C8C013439 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */,
+				0C1885900810601510E0C632060FAF26 /* GooglePlaces */,
+				9506C7FCDAE6E6967A99655F452EEE93 /* iOSDFULibrary */,
+				DC9D94812ABB5754D3A03DF9E15B4ABA /* Pods-GeofenceAlertApp */,
+				31708EE6929C61C0EDA6F5DAE3AF9DB7 /* Zip */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04EF836C32D66053E78ED81D0A89B8E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05A919DA9135F97A03AC971800714018 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D51E8E02AB48C9B2B029125D09BE7F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		82C2CA63301CE2A3CF745D3F85189195 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EF32DD10927425C931F4C29E81695C0 /* Pods-GeofenceAlertApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C10E931C5EE316BDECF2ED70C92879C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22F5D80BF57E4251D5B5033EC3E2746F /* ButtonlessDFU.swift in Sources */,
+				D88EA58D56BE2167E463D427C78E4FC6 /* crc32.swift in Sources */,
+				E23A32D3E5C53DB67ADA26F35802ADBB /* Data.swift in Sources */,
+				23DFCC98ACD04DE589BBEB614EFE144C /* DFUCharacteristic.swift in Sources */,
+				75A83AF070639F33E58DB6EC02ECA6AF /* DFUController.swift in Sources */,
+				F0FB70471FA122551E827D26FB4C1B48 /* DFUControlPoint.swift in Sources */,
+				6D24A4AFE22C0CC51BC57592B284F6CC /* DFUExecutor.swift in Sources */,
+				36D1629A4BC33D0DD973CCBFFB27DB67 /* DFUFirmware.swift in Sources */,
+				8D1B5381DD3E7BF942125A9E606AF02F /* DFUPacket.swift in Sources */,
+				60C4384A4C600977221E6FD30DBF3D06 /* DFUPeripheral.swift in Sources */,
+				7225397D8098EE2C811C49F0486FD1D2 /* DFUPeripheralDelegate.swift in Sources */,
+				1F0C4885194C9052A7D5A51EC5B9EC8E /* DFUPeripheralSelector.swift in Sources */,
+				024D1EFB1F5829EE1205B5BDC82BC816 /* DFUPeripheralSelectorDelegate.swift in Sources */,
+				26A539E96CCCB09C15301A8DE0255F66 /* DFUService.swift in Sources */,
+				759AC93D1054A4782D1560B92BC2941D /* DFUServiceController.swift in Sources */,
+				594432DBF0178971F35410DBEAA86E58 /* DFUServiceDelegate.swift in Sources */,
+				179B8679805E0DA25D8E608B102E60EA /* DFUServiceInitiator.swift in Sources */,
+				67DD388FF9250B80ADA419FDD188AC4F /* DFUServiceSelector.swift in Sources */,
+				D95B429EA2D9B2F6100ED8D28029A4FB /* DFUStarterPeripheral.swift in Sources */,
+				AA621FAB76B8525AF9DD922007C8946F /* DFUStream.swift in Sources */,
+				ED1C0BA0F66CD2CABF506525F8EC7963 /* DFUStreamBin.swift in Sources */,
+				85070186B87AE8EC4C285380CC3B4F02 /* DFUStreamHex.swift in Sources */,
+				2574B452EFB7B50CF63DBA06066D815E /* DFUStreamZip.swift in Sources */,
+				B6DAEB0D2993669E417B7F4339966D15 /* DFUUuidHelper.swift in Sources */,
+				5A2993C550EBBA7F40E0412BF38DD967 /* DFUVersion.swift in Sources */,
+				ADAA63E76B80D4764752B488CB49F961 /* Double.swift in Sources */,
+				47537B37B242226B8A08BEB235D9C387 /* IntelHex2BinConverter.m in Sources */,
+				4953C1D8CC82D0FA9ABE401AB1A929C1 /* iOSDFULibrary-dummy.m in Sources */,
+				EBB147AEA3F40178C816835F8196F1F8 /* LegacyDFUExecutor.swift in Sources */,
+				C0FDBDDC5B5D7C5147B2FC13DECF98E8 /* LegacyDFUPeripheral.swift in Sources */,
+				261083104CE32B4A1144569C17E41FAD /* LegacyDFUPeripheralDelegate.swift in Sources */,
+				DBA973E349876C4DF8A7F1B932AD9E37 /* LegacyDFUService.swift in Sources */,
+				E298433BE50EBFE999F325E896E1553D /* LegacyDFUServiceInitiator.swift in Sources */,
+				9C9E40BD4D137876EDA0954435A3656F /* LoggerDelegate.swift in Sources */,
+				355B4CE47899007A56EDAA23929E8BE9 /* LoggerHelper.swift in Sources */,
+				EA521669E423D436D9C18B7D0F6D15D8 /* Manifest.swift in Sources */,
+				AC6CE5FFAABA4CE0FF9CC345B9723C09 /* ManifestFirmwareInfo.swift in Sources */,
+				71520F4C63CA33327D492A5425FCAD42 /* SecureDFUControlPoint.swift in Sources */,
+				DA889C0CD12ADDA9A3A030DDB5CE3B58 /* SecureDFUExecutor.swift in Sources */,
+				C04C5544566023B9C3C07D0197868058 /* SecureDFUPacket.swift in Sources */,
+				B42B7ED5EDB5EB88EB98CE26612CFC9D /* SecureDFUPeripheral.swift in Sources */,
+				C1A26F3E96EE111D2E7B66D2E6CF9DAC /* SecureDFUPeripheralDelegate.swift in Sources */,
+				8A1F1756537590E54D168C01E4E17DA2 /* SecureDFUService.swift in Sources */,
+				60C8B42D1F546CA11E136E148351D5D9 /* SecureDFUServiceInitiator.swift in Sources */,
+				E12B6BAD7436F73517D97517CAC5EB85 /* SoftdeviceBootloaderInfo.swift in Sources */,
+				2BB0A02B444127A680753943F3031A5E /* ZipArchive.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED9BC8E6AC112461613C834DACDAB1EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F862C1CD19A69E8763D35A60F83443C2 /* ioapi.c in Sources */,
+				9C368A7A33571EE6119126EF70DB8B91 /* QuickZip.swift in Sources */,
+				653B489882F154CF089B510A2001245C /* unzip.c in Sources */,
+				C51301A992286D198C4BD81642150352 /* Zip-dummy.m in Sources */,
+				4B9D69BCB50A3548F839401BF813452A /* zip.c in Sources */,
+				D75B9A275C2EF688699D3D57C27CE983 /* Zip.swift in Sources */,
+				8823E3B2CA15E4774797BE1CF330B338 /* ZipUtilities.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1573CA849D7EA06715CD17047CE403AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Zip;
+			target = 31708EE6929C61C0EDA6F5DAE3AF9DB7 /* Zip */;
+			targetProxy = F0D4F9C10BBFE859AA4A7E7E5CB10B66 /* PBXContainerItemProxy */;
+		};
+		312CA317FBE073DAA677196A150AB22E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GoogleMaps;
+			target = E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */;
+			targetProxy = 505955DB92CCF26EE0A31C08388A6902 /* PBXContainerItemProxy */;
+		};
+		65EC418A8E9366A79AA8711EA88979F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Zip;
+			target = 31708EE6929C61C0EDA6F5DAE3AF9DB7 /* Zip */;
+			targetProxy = 526F46E6146EDB7F5BAF17AB47EC92C8 /* PBXContainerItemProxy */;
+		};
+		851EDF830689F6D5F78A650F4F0F2409 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = iOSDFULibrary;
+			target = 9506C7FCDAE6E6967A99655F452EEE93 /* iOSDFULibrary */;
+			targetProxy = 532E2ACA5EAB448EDD818880434A44CA /* PBXContainerItemProxy */;
+		};
+		D8DC389D31356E5F97E660942AE4D2F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GooglePlaces;
+			target = 0C1885900810601510E0C632060FAF26 /* GooglePlaces */;
+			targetProxy = A6203C990694BBCD00F0E1EC41676515 /* PBXContainerItemProxy */;
+		};
+		D9BD649070DE013341A302C4B9060CAA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GoogleMaps;
+			target = E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */;
+			targetProxy = AF707AB729788D9649BF36E36A1FFA66 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0B5F41E0FCDB8A39499ACE44D1ABAE1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 266D0EAC048B24BCF0E411E2C97D71F1 /* iOSDFULibrary.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/iOSDFULibrary/iOSDFULibrary-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/iOSDFULibrary/iOSDFULibrary-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/iOSDFULibrary/iOSDFULibrary.modulemap";
+				PRODUCT_MODULE_NAME = iOSDFULibrary;
+				PRODUCT_NAME = iOSDFULibrary;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		153631B8D5DE39D2D13C9F400363CD22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD0A7C66988927469DAAD6D9ED9B7B21 /* Zip.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Zip/Zip-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Zip/Zip-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Zip/Zip.modulemap";
+				PRODUCT_MODULE_NAME = Zip;
+				PRODUCT_NAME = Zip;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6D42DC62C4F2E194221DF89C48496C98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		7AE5EB5640E039AEE41D36CC0F1F245E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD1265A258EE293D218500E7DD72E860 /* iOSDFULibrary.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/iOSDFULibrary/iOSDFULibrary-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/iOSDFULibrary/iOSDFULibrary-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/iOSDFULibrary/iOSDFULibrary.modulemap";
+				PRODUCT_MODULE_NAME = iOSDFULibrary;
+				PRODUCT_NAME = iOSDFULibrary;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		831C76800DB53A097E0555982D94944E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7257FE5E3BEF97932BC89D07308D993A /* GooglePlaces.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		88EEB66D4DB71D10A454AF7AA15D1009 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AEC282D8799607F3D3639480006639A /* Pods-GeofenceAlertApp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GeofenceAlertApp/Pods-GeofenceAlertApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GeofenceAlertApp/Pods-GeofenceAlertApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8A3D0A2846E373268BF74BD788DC01D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A505C93460B54A5874958E1D7232D24F /* GooglePlaces.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BDB4C5F3987589AD247CFB932A863229 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99005AE7EDC8C92623ED150733CA3817 /* GoogleMaps.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E4D0D44B090D4284607EBBC4E71A96C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		E81E65F1FBA9CF5C3B3635C1BE06E496 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46DF49F00EA5EE6406DE0CE5D6E8D2DC /* Zip.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Zip/Zip-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Zip/Zip-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Zip/Zip.modulemap";
+				PRODUCT_MODULE_NAME = Zip;
+				PRODUCT_NAME = Zip;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F988659B7FC1F0E5F7944257725769AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44D9428A48389C8B2273CC34F1348A25 /* GoogleMaps.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FBC7B000B9B1683BA9A0ECFE402B1570 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DF7D3F29539A3AEBB11D5E7178CB57E /* Pods-GeofenceAlertApp.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GeofenceAlertApp/Pods-GeofenceAlertApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GeofenceAlertApp/Pods-GeofenceAlertApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D7C5A1CCBB51FEB84A022EABA1D5DFD /* Build configuration list for PBXNativeTarget "iOSDFULibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B5F41E0FCDB8A39499ACE44D1ABAE1C /* Debug */,
+				7AE5EB5640E039AEE41D36CC0F1F245E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46921981F609C5BA3CB72EC4EA41299D /* Build configuration list for PBXAggregateTarget "GoogleMaps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F988659B7FC1F0E5F7944257725769AC /* Debug */,
+				BDB4C5F3987589AD247CFB932A863229 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4D0D44B090D4284607EBBC4E71A96C1 /* Debug */,
+				6D42DC62C4F2E194221DF89C48496C98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		608DA657D5E30B576DA6268896352268 /* Build configuration list for PBXNativeTarget "Zip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				153631B8D5DE39D2D13C9F400363CD22 /* Debug */,
+				E81E65F1FBA9CF5C3B3635C1BE06E496 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		989237A36B20E72CBE0FA863B6AB16BE /* Build configuration list for PBXNativeTarget "Pods-GeofenceAlertApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88EEB66D4DB71D10A454AF7AA15D1009 /* Debug */,
+				FBC7B000B9B1683BA9A0ECFE402B1570 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E215DFB4EAE26646AFED2C4861A55C32 /* Build configuration list for PBXAggregateTarget "GooglePlaces" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A3D0A2846E373268BF74BD788DC01D5 /* Debug */,
+				831C76800DB53A097E0555982D94944E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
